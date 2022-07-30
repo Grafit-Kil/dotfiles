@@ -13,7 +13,7 @@ label-connected = "%upspeed:7%"
 
 format-connected = <label-connected>
 
-format-connected-prefix = ""
+format-connected-prefix = ""
 
 format-connected-prefix-foreground = #cb410b
 
@@ -38,9 +38,9 @@ label-connected = "%downspeed:7%"
 
 format-connected = <label-connected>
 
-format-connected-prefix = ""
+format-connected-prefix = "▲"
 
-format-connected-prefix-foreground = #7c0a02
+format-connected-prefix-foreground = #ffffff
 
 format-connected-foreground = ${colors.foreground}
 
@@ -69,7 +69,7 @@ alert = #bd2c40
 [bar/example]
 monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 15
+height = 13
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 1.0
@@ -98,7 +98,7 @@ font-2 = siji:pixelsize=10;1
 ###############################################################################  module
 modules-left = i3 mpd 
 modules-center = date 
-modules-right = #filesystem xbacklight alsa memory cpu #wlan #eth #battery #temperature networkspeedup networkspeeddown 
+modules-right = #filesystem xbacklight alsa memory cpu #wlan #eth #battery temperature networkspeedup networkspeeddown 
 
 tray-position = right
 tray-padding = 2
@@ -352,22 +352,23 @@ format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
-bar-volume-width = 5
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
+bar-volume-width = 10
+bar-volume-foreground-0 = #37ff3f 
+bar-volume-foreground-1 = #37de3f 
+bar-volume-foreground-2 = #55cc55
+bar-volume-foreground-3 = #55bb55
 bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = ||
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-indicator-font = 3
+bar-volume-fill = +
+bar-volume-fill-font = 3
+bar-volume-empty = -
+bar-volume-empty-font = 3
+bar-volume-empty-foreground = #ffffff
+#${colors.foreground-alt}
 
 
 ############################################################################ battery
@@ -414,7 +415,7 @@ warn-temperature = 50
 format = <ramp> <label>
 format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+#format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
