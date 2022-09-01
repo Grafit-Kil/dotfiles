@@ -195,8 +195,8 @@ workspace 2 output primary
 focus_follows_mouse no
 default_border pixel 1
 default_floating_border pixel 1
-#exec /home/gakko/.config/i3/confh
-exec_always --no-startup-id /home/gakko/.config/polybar/launc.sh
+exec /home/gakko/.config/i3/confh
+exec --no-startup-id /home/gakko/.config/polybar/launc.sh
 bindsym $mod+z exec firefox
 bindsym $mod+x exec nemo
 bindsym $mod+c exec gedit
@@ -213,9 +213,8 @@ bindsym $mod+ctrl+j move workspace to output down
 bindsym $mod+ctrl+k move workspace to output up
 bindsym $mod+ctrl+l move workspace to output right
 
-default_border pixel 3
-default_floating_border pixel 4
-gaps inner 7
+
+gaps inner 11
 
 bindsym $mod+Tab exec --no-startup-id rofi -show drun -show-icons 
 
