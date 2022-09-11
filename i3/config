@@ -183,20 +183,38 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#		position top
-#       status_command i3status
-#       font pango:hack 10
-#        height 23
-#        
-#}
+bar {
+		#position top
+		 #output HDMI-1
+		 output eDP-1
+        status_command i3status
+        #font pango:hack 10
+        font pango:DejaVu Sans Mono 10
+        height 23
+        separator_symbol "|"
+        workspace_min_width 35
+        
+         colors {
+        background #000000
+        statusline #ffffff
+        separator #219cb5
+
+        focused_workspace  #4c7899 #285577 #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+        binding_mode       #2f343a #900000 #ffffff
+    }
+        
+}
 #--------------------------------------------------------------
 workspace 2 output primary
 focus_follows_mouse no
 default_border pixel 1
+
 default_floating_border pixel 1
 exec /home/gakko/.config/i3/confh
-exec --no-startup-id /home/gakko/.config/polybar/launc.sh
+#exec --no-startup-id /home/gakko/.config/polybar/launc.sh
 bindsym $mod+z exec firefox
 bindsym $mod+x exec nemo
 bindsym $mod+c exec gedit
@@ -214,16 +232,10 @@ bindsym $mod+ctrl+k move workspace to output up
 bindsym $mod+ctrl+l move workspace to output right
 
 
-gaps inner 11
+#for_window [class="^.*"] border pixel 1
+#new_window pixel 10
+
+#gaps inner 11
 
 bindsym $mod+Tab exec --no-startup-id rofi -show drun -show-icons 
 
-
-# class                 border  backgr. text    indicator child_border
-client.focused          #ffffff #ffffff #ffffff #ffffff   #117878
-client.focused_inactive #000000 #000000 #000000 #000000   #000000
-#client.unfocused        #000000 #000000 #000000 #000000   #000000
-#client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-#client.background       #ffffff
