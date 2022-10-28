@@ -216,7 +216,7 @@ default_floating_border pixel 1
 exec /home/gakko/.config/i3/confh
 #exec --no-startup-id /home/gakko/.config/polybar/launc.sh
 bindsym $mod+z exec firefox
-bindsym $mod+x exec nemo
+bindsym $mod+x exec pcmanfm-qt
 bindsym $mod+c exec gedit
 bindsym $mod+v exec qbittorrent
 bindsym $mod+b exec telegram-desktop
