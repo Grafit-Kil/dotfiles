@@ -18,6 +18,7 @@ application/pdf=epdfview.desktop
 application/x-bittorrent=deluge.desktop
 text/plain=org.gnome.gedit.desktop
 application/octet-stream=org.gnome.gedit.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-1KCJU1.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Pale Moon.desktop;
@@ -39,3 +40,4 @@ application/pdf=epdfview.desktop;
 application/x-bittorrent=deluge.desktop;
 text/plain=org.gnome.gedit.desktop;
 application/octet-stream=org.gnome.gedit.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-1KCJU1.desktop;

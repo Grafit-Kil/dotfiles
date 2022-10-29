@@ -218,9 +218,9 @@ exec /home/gakko/.config/i3/confh
 bindsym $mod+z exec firefox
 bindsym $mod+x exec pcmanfm-qt
 bindsym $mod+c exec gedit
-bindsym $mod+v exec qbittorrent
+bindsym $mod+v exec thunderbird
 bindsym $mod+b exec telegram-desktop
-bindsym $mod+n exec discord
+bindsym $mod+n exec qbittorrent
 bindsym $mod+m exec kitty htop
 bindsym $mod+p exec poweroff
 bindsym $mod+ctrl+v exec /opt/visual-studio-code/code
