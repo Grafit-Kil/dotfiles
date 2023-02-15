@@ -1,0 +1,89 @@
+* {
+    font:   "hack 10";
+
+    color0:    #000000;
+    color1:    #ffffff;
+    color2:    #117878;
+    color3:    #ebcb8b;
+ 
+    background-color:   transparent;
+    text-color:         @color1;
+    accent-color:       @color2;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+
+mainbox {
+    padding:    10px;
+}
+
+window {
+    background-color:   @color0;
+    border-color:       @accent-color;
+
+    location:   center;
+    height:		450px;
+    width:      700px;
+    y-offset:   -160px;
+    border:    	1px;
+}
+
+inputbar {
+    padding:    10px 10px;
+    spacing:    12px;
+    children:   [ prompt, entry ];
+}
+
+prompt, entry, element-text, element-icon {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+listview {
+    lines:      12;
+    columns:    4;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    8px;
+    spacing:    5px;
+}
+
+element normal urgent {
+    text-color: @color3;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @color0;
+}
+
+element selected normal {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @color3;
+}
+
+element selected active {
+    background-color:   @color2;
+}
+
+element-icon {
+    size:   0.85em;
+}
+
+element-text {
+    text-color: inherit;
+}

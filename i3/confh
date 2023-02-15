@@ -1,0 +1,6 @@
+#!/bin/bash
+﻿setxkbmap tr -v q
+
+feh --bg-scale /home/gakko/.config/i3/wall/wallhaven-q6x5z7.png
+
+compton
