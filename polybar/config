@@ -13,7 +13,7 @@ alert = #bd2c40
 
 ############################################################################ bar
 [bar/example]
-monitor = ${env:MONITOR:HDMI-1}
+#monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 30
 ;offset-x = 1%

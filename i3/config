@@ -232,7 +232,8 @@ bindsym $mod+ctrl+l move workspace to output right
 
 #for_window [class="^.*"] border pixel 1
 #new_window pixel 10
-
-gaps inner 11
-
+for_window [class="^.*"] border pixel 1
+#for_window [class="^.*"] floating enable
+#gaps inner 11
+#gaps top 40
 bindsym $mod+Tab exec --no-startup-id rofi -show drun -show-icons
