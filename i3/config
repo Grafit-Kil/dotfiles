@@ -221,7 +221,7 @@ bindsym $mod+b exec telegram-desktop
 bindsym $mod+n exec qbittorrent
 bindsym $mod+m exec kitty htop
 bindsym $mod+p exec poweroff
-bindsym $mod+ctrl+v exec /opt/visual-studio-code/code
+bindsym $mod+ctrl+v exec kitty lvim
 bindsym $mod+Shift+z exec redshift -P -O 3300
 bindsym $mod+Shift+x exec redshift -P -O 4300
 bindsym $mod+ctrl+h move workspace to output left
@@ -234,6 +234,6 @@ bindsym $mod+ctrl+l move workspace to output right
 #new_window pixel 10
 for_window [class="^.*"] border pixel 1
 #for_window [class="^.*"] floating enable
-#gaps inner 11
+gaps inner 11
 #gaps top 40
 bindsym $mod+Tab exec --no-startup-id rofi -show drun -show-icons
